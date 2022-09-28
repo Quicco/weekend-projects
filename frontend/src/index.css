@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --default-font-family: Proxima Nova, sans-serif;
+  --fontsize: 0.75rem;
+
+  /*Propriedades Botao */
+  --button-background: #21dda2;
+  --button-text-color: #3d00b8;
+  --button-height: 48px;
+  --button-width: 8%;
+  --button-padding: 15px;
+  --button-border-radius: 4px;
+  --button-min-width: 7rem;
+  --button-border: 2px solid #21dda2;
+  --button-text-align: center;
+  --mouseover: pointer;
+
+  /*Propriedades H2 */
+  --h2-font-size: 2.5em;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
