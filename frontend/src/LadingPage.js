@@ -172,7 +172,7 @@ export default function LadingPage() {
                   className={`candidato`}
                   key={`candidato ${i}`}
                 >
-                  <div classname="icons">
+                  <div className="icons">
                     <img
                       src={icons[Math.floor(Math.random() * icons.length)]}
                       className="candidatoLeft"
@@ -184,8 +184,8 @@ export default function LadingPage() {
                     <span className="idadeLP item2">
                       {candidato.idade} anos
                     </span>
-                    <div className="checkboxLP item">
-                      <input type="checkbox"></input>
+                    <div className="checkboxLPitem">
+                      <input className="test" type="checkbox"></input>
                     </div>
                   </div>
                 </div>

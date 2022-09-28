@@ -1,6 +1,6 @@
 .menu {
   background-color: #3d00b8;
-  height: 100vh;
+  height: 100%vh;
   width: 13vw;
 
   display: flex;
@@ -59,7 +59,6 @@
   width: 40%;
   position: relative;
   bottom: 0;
-
   font-family: var(--default-font-family);
   text-transform: uppercase;
   color: var(--button-text-color);
@@ -91,9 +90,11 @@
   flex-direction: row;
   align-items: center;
   width: 80%;
-  border: 2px solid #000;
+  border: 3px solid #000;
+  margin-bottom: 1rem;
 }
 
+/*Candidatos Styles */
 .candidato .candidatoLeft {
   width: 15%;
 }
@@ -101,6 +102,10 @@
   display: flex;
   flex-direction: row;
   width: 80%;
+}
+
+.candidatosLP {
+  margin-left: 10rem;
 }
 
 .checkboxLP {
@@ -111,6 +116,11 @@
 
 .nomeLP {
   text-align: left;
+  font-weight: 600;
+}
+
+.idadeLP {
+  font-weight: 600;
 }
 
 .cabecalho h1 {
@@ -150,12 +160,26 @@
   margin: 1rem;
 }
 
-.candidato .icons img {
-  height: 5px;
-  width: 5px;
+.icons {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.icons img {
+  height: 50px;
+  width: 50px;
+  border: 3px solid #000;
+  border-radius: 20%;
+  padding: 4px;
 }
 
 .lupa img {
   height: 30px;
   width: 30px;
+}
+
+.test {
+  transform: scale(2);
+  margin-right: 2rem;
 }
