@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .menu {
   background-color: #3d00b8;
+  border-right: 2px solid #2b0180;
   height: 100%vh;
   width: 13vw;
 
@@ -12,6 +18,7 @@
   color: #fff;
   font-family: var(--default-font-family);
   padding: var(--button-padding);
+  margin-bottom: 1rem;
 
   font-weight: 600;
 
@@ -25,6 +32,7 @@
 
 .menuItem p:hover {
   background-color: var(--button-background);
+  text-decoration: underline;
 }
 
 .menuItem {
@@ -78,6 +86,7 @@
 /*Cabecalho*/
 
 .plataforma .cabecalho {
+  flex: 1;
   width: 87vw;
   display: flex;
   flex-direction: row;
@@ -85,18 +94,19 @@
   justify-content: space-between;
 }
 
+/*Linha dos Candidatos */
 .candidato {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 80%;
-  border: 3px solid #000;
+  border: 1px solid #000;
   margin-bottom: 1rem;
 }
 
 /*Candidatos Styles */
 .candidato .candidatoLeft {
-  width: 15%;
+  width: 8%;
 }
 .candidato .candidatoRight {
   display: flex;
@@ -114,13 +124,17 @@
   justify-content: flex-end;
 }
 
+/* Nome dos Candidatos */
 .nomeLP {
   text-align: left;
   font-weight: 600;
+  font-family: var(--default-font-family);
 }
 
+/* Idade dos Candidatos */
 .idadeLP {
   font-weight: 600;
+  font-family: var(--default-font-family);
 }
 
 .cabecalho h1 {
@@ -131,6 +145,21 @@
   margin: 1rem;
 }
 
+/*Botoes da Listagem Top */
+.leftListagemTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.filterButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 82.8%;
+}
+
+/*Botoes padrao da plataforma */
 .bottaoComponent {
   padding: var(--button-padding);
   background-color: var(--button-background);
@@ -154,23 +183,26 @@
   width: 30px;
 }
 
+/*Icon do calendario */
 .calendario img {
   height: 80px;
   width: 80px;
   margin: 1rem;
 }
 
+/*Div dos Icons */
 .icons {
   display: flex;
   align-items: flex-start;
   margin: 1rem;
 }
 
+/*Icons */
 .icons img {
-  height: 50px;
-  width: 50px;
-  border: 3px solid #000;
-  border-radius: 20%;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
   padding: 4px;
 }
 
@@ -182,4 +214,34 @@
 .test {
   transform: scale(2);
   margin-right: 2rem;
+}
+
+/*Pagina 2 */
+
+.cadastro {
+  width: 100%;
+  height: 100%;
+}
+
+/*h2 style*/
+.cadastro h2 {
+  font-size: var(--h2-font-size);
+  font-family: var(--default-font-family);
+  margin-top: 2rem;
+}
+
+.cadastro p {
+  margin-top: 1rem;
+}
+
+.cadastro .cadastro-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+}
+.cadastro .cadastro-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5rem;
 }

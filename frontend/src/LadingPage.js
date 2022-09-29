@@ -156,14 +156,18 @@ export default function LadingPage() {
           </div>
           <div className="listagem">
             <div className="listagemTop">
-              <Button onClick={() => setPagina(1)}>ADICIONAR</Button>
-              <Button>PESQUISAR</Button>
+              <div className="leftListagemTop">
+                <Button onClick={() => setPagina(1)}>ADICIONAR</Button>
+                <Button>PESQUISAR</Button>
+              </div>
               <Button>CANDIDATOS POR PAGINA</Button>
-              <Button onClick={() => setFiltros((prev) => !prev)}>
-                {filtros ? "FILTRAR" : "FILTROS"}
-              </Button>
-              <Button>Selec. All</Button>
-              <Button>Selec. None</Button>
+              <div className="filterButtons">
+                <Button onClick={() => setFiltros((prev) => !prev)}>
+                  {filtros ? "FILTRAR" : "FILTROS"}
+                </Button>
+                <Button>Selec. All</Button>
+                <Button>Selec. None</Button>
+              </div>
             </div>
             <div className="candidatosLP">
               {candidatos.map((candidato, i) => (
@@ -200,22 +204,26 @@ export default function LadingPage() {
       {pagina === 1 && (
         <div className="cadastro">
           <h2>Candidato ao PowerUp 9</h2>
-          <p>
-            Nome<input></input>
-          </p>
-          <p>
-            Data de Nascimento<input></input>
-          </p>
-          <p>
-            Email<input></input>
-          </p>
-          <p>
-            Telefone<input></input>
-          </p>
-          <Button>Adicionar Nota</Button>
-          <Button>Agendar Entrevista</Button>
-          <Button>Confirmar</Button>
-          <Button onClick={() => setPagina(0)}>Cancelar</Button>
+          <div className="cadastro-input">
+            <p>
+              Nome<input></input>
+            </p>
+            <p>
+              Data de Nascimento<input></input>
+            </p>
+            <p>
+              Email<input></input>
+            </p>
+            <p>
+              Telefone<input></input>
+            </p>
+          </div>
+          <div className="cadastro-button">
+            <Button>Adicionar Nota</Button>
+            <Button>Agendar Entrevista</Button>
+            <Button>Confirmar</Button>
+            <Button onClick={() => setPagina(0)}>Cancelar</Button>
+          </div>
         </div>
       )}
       {pagina === 2 && (
