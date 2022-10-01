@@ -1,0 +1,66 @@
+/*Login Page Styling */
+.login__page {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgb(86, 23, 202);
+
+  border-radius: 20px;
+  box-shadow: 2px 1px 8px black;
+  z-index: -1;
+}
+/*Header of the page Styling */
+.login__page h1 {
+  margin: 2rem;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-family: Montserrat, sans-serif;
+  font-size: 35px;
+}
+.login__page p {
+  margin: 2rem;
+  padding-top: 1rem;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+/*Input Components Styling */
+.login__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+/*Input Styling */
+.login__input input {
+  position: relative;
+  margin-top: 2rem;
+  padding: 5px;
+
+  width: 50%;
+
+  border: 2px solid #000;
+  border-radius: 5px;
+} /*Button Styling */
+.button {
+  margin-top: 2rem;
+  padding: 5px;
+
+  width: 25%;
+
+  background-color: rgb(241, 0, 20);
+  border: 2px solid #000;
+  border-radius: 4px;
+
+  color: #fff;
+  font-weight: 600;
+}
+.button:hover {
+  margin-top: 2rem;
+  padding: 5px;
+  width: 25%;
+
+  background-color: rgb(255, 0, 21);
+  border-radius: 5px;
+  cursor: pointer;
+}
