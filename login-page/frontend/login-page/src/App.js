@@ -5,10 +5,8 @@ import LoginPopup from "./Popups/LoginPopup";
 
 function App() {
   return (
-    <div className="App">
-      <main>
-        <LoginForm />
-      </main>
+    <div className="page">
+      <LoginForm />
     </div>
   );
 }

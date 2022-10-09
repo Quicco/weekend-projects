@@ -2,11 +2,11 @@
 .login__page {
   margin: 2rem;
   padding: 2rem;
-  background-color: rgb(86, 23, 202);
+  background-color: rgba(27, 9, 70, 0.808);
 
+  height: 60%;
   border-radius: 20px;
   box-shadow: 2px 1px 8px black;
-  z-index: -1;
 }
 /*Header of the page Styling */
 .login__page h1 {
@@ -17,12 +17,19 @@
   font-size: 35px;
 }
 .login__page p {
-  margin: 2rem;
+  display: flex;
+  justify-content: center;
+
   padding-top: 1rem;
   color: white;
   text-shadow: 2px 2px 10px black;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
+}
+.popup-test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*Input Components Styling */
 .login__input {
@@ -33,6 +40,9 @@
 }
 /*Input Styling */
 .login__input input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin-top: 2rem;
   padding: 5px;
@@ -42,25 +52,3 @@
   border: 2px solid #000;
   border-radius: 5px;
 } /*Button Styling */
-.button {
-  margin-top: 2rem;
-  padding: 5px;
-
-  width: 25%;
-
-  background-color: rgb(241, 0, 20);
-  border: 2px solid #000;
-  border-radius: 4px;
-
-  color: #fff;
-  font-weight: 600;
-}
-.button:hover {
-  margin-top: 2rem;
-  padding: 5px;
-  width: 25%;
-
-  background-color: rgb(255, 0, 21);
-  border-radius: 5px;
-  cursor: pointer;
-}

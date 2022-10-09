@@ -1,7 +1,8 @@
 import Button from "./Button";
 import "./LoginForm.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LoginPopup from "../Popups/LoginPopup";
+import HomePage from "../HomePage/HomePage";
 
 const LoginForm = () => {
   // Component States
@@ -20,12 +21,16 @@ const LoginForm = () => {
     /* console.log(event.target.value); */
   };
   const onClickHandler = () => {
-    setLoggedIn((loggedIn) => !loggedIn);
+    if (!input || !pwd) {
+      setLoggedIn((loggedIn) => loggedIn);
+    } else {
+      setLoggedIn((loggedIn) => !loggedIn);
+    }
     setInput("");
     setPwd("");
   };
 
-  return (
+  return !loggedIn ? (
     <div className="login__page">
       <h1>Welcome to the Travel Lounge</h1>
       <p>Please insert your email and password.</p>
@@ -47,10 +52,11 @@ const LoginForm = () => {
 
       <div className="popup-test">
         <Button onClick={onClickHandler}>Login</Button>
-        <span className="test">
-          <LoginPopup trigger={true}>Login Succesful!</LoginPopup>
-        </span>
       </div>
+    </div>
+  ) : (
+    <div className="homepage">
+      <HomePage />
     </div>
   );
 };
